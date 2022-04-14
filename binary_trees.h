@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 /* Structs */
 /**
@@ -50,5 +51,8 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+int binary_tree_is_bst(const binary_tree_t *tree);
+int bst_utility(const binary_tree_t *tree, int min, int max);
+bst_t *bst_insert(bst_t **tree, int value);
 
 #endif /* _BINARY_TREES_H_ */
